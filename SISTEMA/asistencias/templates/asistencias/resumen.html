@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Resumen de asistencias</title>
+</head>
+<body>
+  <h1>Resumen - Grupo {{ grupo.clave }}</h1>
+
+  <p>
+    <a href="{% url 'asistencias:home' %}">← Grupos</a> |
+    <a href="{% url 'asistencias:pasar_lista' grupo.id %}">Pasar lista</a> |
+    <a href="/admin/">Admin</a>
+  </p>
+
+  <form method="get">
+    <label>Asignación:</label>
+    <select name="asignacion">
+      <option value="">(Todas)</option>
+      {% for a in asignaciones %}
+        <option value="{{ a.id }}" {% if asignacion_sel and asignacion_sel.id == a.id %}selected{% endif %}>
+          {{ a.materia.nombre }} — {{ a.docente.nombre }}
+        </option>
+      {% endfor %}
+    </select>
+
+    <label>Fecha base:</label>
+    <input type="date" name="fecha" value="{{ fecha_base|date:'Y-m-d' }}">
+    <button type="submit">Actualizar</button>
+  </form>
+
+  <hr>
+
+  <h2>Semanal (Lun–Vie): {{ inicio_sem }} a {{ fin_sem }}</h2>
+  <p>
+    <strong>Totales del grupo:</strong>
+    Total={{ tot_sem.total }},
+    P={{ tot_sem.presentes }},
+    R={{ tot_sem.retardos }},
+    J={{ tot_sem.justificados }},
+    A={{ tot_sem.ausentes }},
+    %={{ tot_sem.porcentaje }}
+  </p>
+
+  <table border="1" cellpadding="6">
+    <tr>
+      <th>Alumno</th><th>Total</th><th>P</th><th>R</th><th>J</th><th>A</th><th>Asistió</th><th>%</th>
+    </tr>
+    {% for r in stats_sem %}
+      <tr>
+        <td>{{ r.alumno__nombre }} ({{ r.alumno__matricula }})</td>
+        <td>{{ r.total }}</td>
+        <td>{{ r.presentes }}</td>
+        <td>{{ r.retardos }}</td>
+        <td>{{ r.justificados }}</td>
+        <td>{{ r.ausentes }}</td>
+        <td>{{ r.asistio }}</td>
+        <td>{{ r.porcentaje }}</td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="8">No hay asistencias registradas en la semana.</td></tr>
+    {% endfor %}
+  </table>
+
+  <hr>
+
+  <h2>Mensual: {{ inicio_mes }} a {{ fin_mes }}</h2>
+  <p>
+    <strong>Totales del grupo:</strong>
+    Total={{ tot_mes.total }},
+    P={{ tot_mes.presentes }},
+    R={{ tot_mes.retardos }},
+    J={{ tot_mes.justificados }},
+    A={{ tot_mes.ausentes }},
+    %={{ tot_mes.porcentaje }}
+  </p>
+
+  <table border="1" cellpadding="6">
+    <tr>
+      <th>Alumno</th><th>Total</th><th>P</th><th>R</th><th>J</th><th>A</th><th>Asistió</th><th>%</th>
+    </tr>
+    {% for r in stats_mes %}
+      <tr>
+        <td>{{ r.alumno__nombre }} ({{ r.alumno__matricula }})</td>
+        <td>{{ r.total }}</td>
+        <td>{{ r.presentes }}</td>
+        <td>{{ r.retardos }}</td>
+        <td>{{ r.justificados }}</td>
+        <td>{{ r.ausentes }}</td>
+        <td>{{ r.asistio }}</td>
+        <td>{{ r.porcentaje }}</td>
+      </tr>
+    {% empty %}
+      <tr><td colspan="8">No hay asistencias registradas en el mes.</td></tr>
+    {% endfor %}
+  </table>
+</body>
+</html>
