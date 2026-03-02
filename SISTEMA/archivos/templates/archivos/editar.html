@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Editar</title>
+</head>
+<body>
+    <h1>Editar Archivo</h1>
+
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Actualizar</button>
+    </form>
+
+    <a href="{% url 'lista' %}">Volver</a>
+</body>
+</html>

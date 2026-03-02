@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Repositorio</title>
+</head>
+<body>
+    <h1>Repositorio de Archivos</h1>
+
+    <a href="{% url 'subir' %}">Subir nuevo archivo</a>
+
+    <ul>
+        {% for archivo in archivos %}
+        <li>
+            <strong>{{ archivo.nombre }}</strong>
+            - {{ archivo.descripcion }}
+            - <a href="{{ archivo.archivo.url }}">Descargar</a>
+            - <a href="{% url 'editar' archivo.id %}">Editar</a>
+            - <a href="{% url 'eliminar' archivo.id %}">Eliminar</a>
+        </li>
+        {% empty %}
+        <li>No hay archivos todavia.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
