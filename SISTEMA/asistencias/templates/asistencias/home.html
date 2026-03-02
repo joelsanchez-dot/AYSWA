@@ -13,6 +13,7 @@
         <strong>{{ g.clave }}</strong>
         {% if g.nombre %}- {{ g.nombre }}{% endif %}
         | <a href="{% url 'asistencias:pasar_lista' g.id %}">Pasar lista</a>
+        | <a href="{% url 'asistencias:resumen' g.id %}">Resumen</a>
       </li>
     {% empty %}
       <li>No hay grupos. Crea uno en /admin.</li>
