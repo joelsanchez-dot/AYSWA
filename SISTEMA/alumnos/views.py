@@ -1,37 +1,29 @@
-from django.shortcuts import render, redirect
-from .models import Materia
+from django.urls import reverse_lazy
+from django.views.generic import ListView, CreateView, UpdateView, DeleteView
+from .models import Cita
 
-def lista_materias(request):
-    materias = Materia.objects.all()
-    return render(request, 'alumnos/lista.html', {'materias': materias})
+# LISTAR CITAS (Lectura)
+class CitaListView(ListView):
+    model = Cita
+    template_name = 'alumnos/lista_citas.html'
+    context_object_name = 'citas'
 
+# CREAR CITA (Alta)
+class CitaCreateView(CreateView):
+    model = Cita
+    template_name = 'alumnos/form_cita.html'
+    fields = ['paciente', 'fecha', 'hora', 'motivo', 'estado']
+    success_url = reverse_lazy('lista_citas')
 
-def agregar_materia(request):
-    if request.method == "POST":
-        nombre = request.POST['nombre']
-        creditos = request.POST['creditos']
-        horario = request.POST['horario']
+# EDITAR CITA (Modificar)
+class CitaUpdateView(UpdateView):
+    model = Cita
+    template_name = 'alumnos/form_cita.html'
+    fields = ['paciente', 'fecha', 'hora', 'motivo', 'estado']
+    success_url = reverse_lazy('lista_citas')
 
-        Materia.objects.create(
-            nombre=nombre,
-            creditos=creditos,
-            horario=horario
-        )
-        return redirect('lista_materias')
-
-    return render(request, 'alumnos/agregar.html')
-def editar_materia(request, id):
-    materia = Materia.objects.get(id=id)
-
-    if request.method == "POST":
-        materia.nombre = request.POST['nombre']
-        materia.creditos = request.POST['creditos']
-        materia.horario = request.POST['horario']
-        materia.save()
-        return redirect('lista_materias')
-
-    return render(request, 'alumnos/editar.html', {'materia': materia})
-def eliminar_materia(request, id):
-    materia = Materia.objects.get(id=id)
-    materia.delete()
-    return redirect('lista_materias')
+# ELIMINAR CITA (Baja)
+class CitaDeleteView(DeleteView):
+    model = Cita
+    template_name = 'alumnos/confirmar_eliminar.html'
+    success_url = reverse_lazy('lista_citas')
