@@ -1,0 +1,12 @@
+# Base de datos
+db.sqlite3
+
+# Archivos subidos
+media/
+
+# Entorno virtual
+venv/
+
+# Archivos de Python
+__pycache__/
+*.pyc
