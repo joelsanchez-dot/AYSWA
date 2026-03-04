@@ -1,23 +1,38 @@
-# Python
+# Python y Cache
 __pycache__/
-*.pyc
+*.py[cod]
 *.pyo
 *.pyd
-
-# Django
-db.sqlite3
-*.sqlite3
-SISTEMA/db.sqlite3
-/media
-/staticfiles
+*$py.class
+*.so
+.Python
 
 # Entornos virtuales
-venv/
 env/
+venv/
+ENV/
 .env
+.venv
 
-# VS Code
+# Django (Archivos locales que NO deben subirse)
+db.sqlite3
+*.sqlite3
+db.sqlite3-journal
+SISTEMA/db.sqlite3
+media/
+/media
+staticfiles/
+/staticfiles
+/static/
+
+# IDEs (VS Code / IntelliJ)
 .vscode/
+.idea/
+*.swp
+*.bak
 
-# Archivos de sistema
+# Archivos de sistema (Windows / macOS)
+Thumbs.db
+ehthumbs.db
+Desktop.ini
 .DS_Store
