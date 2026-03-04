@@ -1,6 +1,8 @@
 # Python y Cache
 __pycache__/
 *.py[cod]
+*.pyo
+*.pyd
 *$py.class
 *.so
 .Python
@@ -14,9 +16,13 @@ ENV/
 
 # Django (Archivos locales que NO deben subirse)
 db.sqlite3
+*.sqlite3
 db.sqlite3-journal
+SISTEMA/db.sqlite3
 media/
+/media
 staticfiles/
+/staticfiles
 /static/
 
 # IDEs (VS Code / IntelliJ)
