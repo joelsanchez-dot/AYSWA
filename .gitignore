@@ -1,16 +1,1 @@
-# Entornos virtuales
-venv/
-env/
 
-# Base de datos
-db.sqlite3
-
-# Archivos compilados
-__pycache__/
-*.pyc
-
-# Visual Studio
-.vs/
-
-# Media (opcional si no quieres subir archivos)
-media/
