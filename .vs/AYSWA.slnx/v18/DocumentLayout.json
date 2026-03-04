@@ -1,0 +1,211 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\editar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\templates\\archivos\\editar.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\subir.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\templates\\archivos\\subir.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\lista.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\templates\\archivos\\lista.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\admin.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\SISTEMA\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\urls.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\views.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\forms.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\SISTEMA\\settings.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\archivos\\models.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\manage.py||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:SISTEMA\\manage.py||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "admin.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\admin.py",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\admin.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\admin.py",
+              "RelativeToolTip": "SISTEMA\\archivos\\admin.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:46:34.2Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\urls.py",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\urls.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\urls.py",
+              "RelativeToolTip": "SISTEMA\\archivos\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:34:09.442Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "editar.html",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\editar.html",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\templates\\archivos\\editar.html",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\editar.html",
+              "RelativeToolTip": "SISTEMA\\archivos\\templates\\archivos\\editar.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-28T01:29:49.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "subir.html",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\subir.html",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\templates\\archivos\\subir.html",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\subir.html",
+              "RelativeToolTip": "SISTEMA\\archivos\\templates\\archivos\\subir.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-28T01:29:36.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "lista.html",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\lista.html",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\templates\\archivos\\lista.html",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\templates\\archivos\\lista.html",
+              "RelativeToolTip": "SISTEMA\\archivos\\templates\\archivos\\lista.html",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2026-02-28T01:29:17.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "views.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\views.py",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\views.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\views.py",
+              "RelativeToolTip": "SISTEMA\\archivos\\views.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:27:30.137Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "forms.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\forms.py",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\forms.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\forms.py",
+              "RelativeToolTip": "SISTEMA\\archivos\\forms.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:27:17.787Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "models.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\models.py",
+              "RelativeDocumentMoniker": "SISTEMA\\archivos\\models.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\archivos\\models.py",
+              "RelativeToolTip": "SISTEMA\\archivos\\models.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:26:25.603Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "settings.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\settings.py",
+              "RelativeDocumentMoniker": "SISTEMA\\SISTEMA\\settings.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\settings.py",
+              "RelativeToolTip": "SISTEMA\\SISTEMA\\settings.py",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAUwEcAAAA0AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:24:59.003Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "urls.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\urls.py",
+              "RelativeDocumentMoniker": "SISTEMA\\SISTEMA\\urls.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\SISTEMA\\urls.py",
+              "RelativeToolTip": "SISTEMA\\SISTEMA\\urls.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:21:44.344Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "manage.py",
+              "DocumentMoniker": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\manage.py",
+              "RelativeDocumentMoniker": "SISTEMA\\manage.py",
+              "ToolTip": "C:\\Users\\ingn_\\source\\repos\\AYSWA\\SISTEMA\\manage.py",
+              "RelativeToolTip": "SISTEMA\\manage.py",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002457|",
+              "WhenOpened": "2026-02-28T01:03:06.178Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
