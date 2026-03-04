@@ -4,7 +4,8 @@ from django.views.generic import RedirectView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', include('alumnos.urls')),
     path('cupones/', include('cupones.urls')),
-    # Esta línea soluciona tu primer error de la imagen
-    path('', RedirectView.as_view(url='cupones/', permanent=True)), 
+    # Esta línea redirige la raíz a cupones si así lo deseas
+    # path('', RedirectView.as_view(url='cupones/', permanent=True)), 
 ]
