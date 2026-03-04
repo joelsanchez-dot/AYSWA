@@ -1,0 +1,12 @@
+{% extends "alumnos/base.html" %}
+
+{% block content %}
+<a href="{% url 'materia_create' %}">Nueva Materia</a>
+<h2>Lista de Materias</h2>
+
+<ul>
+    {% for materia in materias %}
+    <li>{{ materia.nombre }} - {{ materia.creditos }} créditos</li>
+    {% endfor %}
+</ul>
+{% endblock %}

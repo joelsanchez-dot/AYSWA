@@ -1,0 +1,19 @@
+{% extends "alumnos/base.html" %}
+
+{% block content %}
+<h2>{{ alumno.nombre }}</h2>
+
+<p>Créditos aprobados: {{ alumno.creditos_aprobados }}</p>
+<p>Porcentaje de avance: {{ alumno.porcentaje_avance }}%</p>
+
+<h3>Materias:</h3>
+<ul>
+    {% for ins in alumno.inscripciones.all %}
+    <li>
+        {{ ins.materia.nombre }} - {{ ins.estado }} - {{ ins.calificacion }}
+    </li>
+    {% endfor %}
+</ul>
+
+<a href="{% url 'inscripcion_create' %}">Inscribir en materia</a>
+{% endblock %}

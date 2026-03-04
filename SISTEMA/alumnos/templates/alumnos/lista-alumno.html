@@ -1,0 +1,16 @@
+{% extends "alumnos/base.html" %}
+
+{% block content %}
+<a href="{% url 'alumno_create' %}">Nuevo Alumno</a>
+<h2>Lista de Alumnos</h2>
+
+<ul>
+    {% for alumno in alumnos %}
+    <li>
+        <a href="{% url 'alumno_detail' alumno.id %}">
+            {{ alumno.nombre }}
+        </a>
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

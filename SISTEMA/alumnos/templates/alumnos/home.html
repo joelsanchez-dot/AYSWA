@@ -1,0 +1,10 @@
+{% extends "alumnos/base.html" %}
+
+{% block content %}
+<h2>Bienvenido al Sistema Escolar</h2>
+
+<ul>
+    <li><a href="{% url 'alumno_list' %}">Ver Alumnos</a></li>
+    <li><a href="{% url 'materia_list' %}">Ver Materias</a></li>
+</ul>
+{% endblock %}
