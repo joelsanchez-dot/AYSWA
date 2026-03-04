@@ -9,12 +9,7 @@ class Paciente(models.Model):
         return self.nombre
 
 class Cita(models.Model):
-    ESTADOS = [
-        ('P', 'Pendiente'),
-        ('C', 'Completada'),
-        ('X', 'Cancelada'),
-    ]
-    
+    ESTADOS = [('P', 'Pendiente'), ('C', 'Completada'), ('X', 'Cancelada')]
     paciente = models.ForeignKey(Paciente, on_delete=models.CASCADE)
     fecha = models.DateField()
     hora = models.TimeField()
@@ -22,4 +17,4 @@ class Cita(models.Model):
     estado = models.CharField(max_length=1, choices=ESTADOS, default='P')
 
     def __str__(self):
-        return f"{self.paciente} - {self.fecha} a las {self.hora}"
+        return f"{self.paciente} - {self.fecha}"
