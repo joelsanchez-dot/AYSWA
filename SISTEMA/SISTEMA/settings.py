@@ -25,6 +25,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'alumnos',
     'becas',
+    'inscripciones',
     'SISTEMA.cupones',
 ]
 
@@ -75,15 +76,11 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Internationalization
-# Cambiamos el idioma de 'en-us' (inglés) a 'es-mx' (español de México)
 LANGUAGE_CODE = 'es-mx'
-
-# Ajustamos la zona horaria para que las fechas sean correctas
 TIME_ZONE = 'America/Mexico_City'
-
-USE_I18N = True # Activa la internacionalización (traducción)
+USE_I18N = True 
 USE_L10N = True
-USE_TZ = True   # Activa el uso de zonas horarias
+USE_TZ = True   
 
 # Static files (CSS, JavaScript, Images)
 STATIC_URL = '/static/'
