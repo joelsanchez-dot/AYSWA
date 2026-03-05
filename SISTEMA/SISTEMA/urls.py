@@ -3,7 +3,13 @@ from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('alumnosJavier.urls')),   # Tu app alumnosJavier
-    path('alumnos/', include('alumnos.urls')), # App alumnos del profe
-    path('becas/', include('becas.urls')),     # App becas del profe
+
+    # Rutas del profesor
+    path('inscripciones/', include('inscripciones.urls')),
+    path('alumnos/', include('alumnos.urls')),
+    path('becas/', include('becas.urls')),
+    path('cupones/', include('SISTEMA.cupones.urls')),
+
+    # Tu app
+    path('', include('alumnosJavier.urls')),
 ]

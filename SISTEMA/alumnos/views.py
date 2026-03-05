@@ -1,51 +1,33 @@
-from django.shortcuts import render, redirect
-from .models import Materia
-from django.db.models import Sum
+from django.shortcuts import render # Herramienta para generar la página HTML
+from .models import Alumno # Importamos tu tabla de alumnos
 
-def lista_materias(request):
-    materias = Materia.objects.all()
+def reporte_escolar(request):
+    # 1. Consultamos todos los alumnos guardados en la base de datos
+    alumnos = Alumno.objects.all()
     
-    # Cálculos de Avance y Gestión de Créditos
-    total_creditos = materias.aggregate(Sum('creditos'))['creditos__sum'] or 0
-    creditos_aprobados = materias.filter(estatus='Aprobada').aggregate(Sum('creditos'))['creditos__sum'] or 0
+    # 2. Obtenemos el conteo total de registros
+    total = alumnos.count()
     
-    # Porcentaje de avance
-    avance = (creditos_aprobados / total_creditos * 100) if total_creditos > 0 else 0
+    # 3. Filtramos: buscamos cuántos tienen calificación menor a 70
+    # "__lt" significa "Less Than" (menor que)
+    reprobados = alumnos.filter(calificacion__lt=70).count()
+    
+    # 4. Filtramos: buscamos cuántos tienen la casilla 'ha_desertado' marcada
+    desertores = alumnos.filter(ha_desertado=True).count()
 
+    # 5. Calculamos porcentajes matemáticos (Parte / Total * 100)
+    # Usamos una validación para que si el total es 0, el programa no explote
+    p_reprobados = (reprobados / total * 100) if total > 0 else 0
+    p_desercion = (desertores / total * 100) if total > 0 else 0
+
+    # 6. Guardamos todo en un "Contexto" (un paquete de datos para el HTML)
     context = {
-        'materias': materias,
-        'total_creditos': total_creditos,
-        'creditos_aprobados': creditos_aprobados,
-        'avance': round(avance, 2)
+        'total': total,
+        'reprobados': reprobados,
+        'p_reprobados': p_reprobados,
+        'desertores': desertores,
+        'p_desercion': p_desercion,
     }
-    return render(request, 'alumnos/lista.html', context)
-
-def agregar_materia(request):
-    if request.method == "POST":
-        Materia.objects.create(
-            nombre=request.POST['nombre'],
-            creditos=request.POST['creditos'],
-            horario=request.POST['horario'],
-            estatus=request.POST['estatus'],
-            calificacion=request.POST.get('calificacion', 0)
-        )
-        return redirect('lista_materias')
-    return render(request, 'alumnos/agregar.html')
-
-def editar_materia(request, id):
-    materia = Materia.objects.get(id=id)
-    if request.method == "POST":
-        materia.nombre = request.POST['nombre']
-        materia.creditos = request.POST['creditos']
-        materia.horario = request.POST['horario']
-        materia.estatus = request.POST['estatus']
-        materia.calificacion = request.POST['calificacion']
-        materia.save()
-        return redirect('lista_materias')
-    return render(request, 'alumnos/editar.html', {'materia': materia})
-
-# eliminar_materia se queda igual
-def eliminar_materia(request, id):
-    materia = Materia.objects.get(id=id)
-    materia.delete()
-    return redirect('lista_materias')
+    
+    # 7. Enviamos esos datos al archivo visual 'reporte.html'
+    return render(request, 'alumnos/reporte.html', context)
