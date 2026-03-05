@@ -27,7 +27,9 @@ INSTALLED_APPS = [
     'becas',
     'inscripciones',
     'SISTEMA.cupones',
+
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
