@@ -5,9 +5,7 @@ __pycache__/
 *.pyd
 
 # Django
-db.sqlite3
 *.sqlite3
-SISTEMA/db.sqlite3
 /media
 /staticfiles
 
@@ -21,3 +19,11 @@ env/
 
 # Archivos de sistema
 .DS_Store
+
+# Logs
+*.log
+
+# Build
+dist/
+build/
+*.egg-info/
