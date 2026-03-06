@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Foro de Alumnos</title>
+</head>
+<body>
+    <h1>Foro de Dudas - Daniel</h1>
+    <a href="{% url 'crear_duda' %}">Nueva Publicación</a>
+    <hr>
+    {% for duda in dudas %}
+        <div style="border: 1px solid #ccc; padding: 10px; margin-bottom: 10px;">
+            <h3>{{ duda.titulo }}</h3>
+            <p>{{ duda.contenido }}</p>
+            <small>Publicado el: {{ duda.fecha_publicacion }}</small>
+        </div>
+    {% empty %}
+        <p>No hay dudas publicadas aún.</p>
+    {% endfor %}
+</body>
+</html>

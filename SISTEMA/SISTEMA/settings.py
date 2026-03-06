@@ -27,7 +27,7 @@ INSTALLED_APPS = [
     'becas',
     'inscripciones',
     'SISTEMA.cupones',
-   'SISTEMA.foro_alumnos',  # <--- Agrégale el "SISTEMA." antes del nombre
+   'SISTEMA.foro_alumnos',  # <--- Agrégale el "SISTEMA." antes del nombre siiscd ..
 ]
 
 MIDDLEWARE = [
