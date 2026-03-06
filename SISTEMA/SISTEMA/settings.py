@@ -27,6 +27,7 @@ INSTALLED_APPS = [
     'becas',
     'inscripciones',
     'SISTEMA.cupones',
+   'SISTEMA.foro_alumnos',  # <--- Agrégale el "SISTEMA." antes del nombre
 ]
 
 MIDDLEWARE = [
@@ -87,3 +88,4 @@ STATIC_URL = '/static/'
 
 # Default primary key field type
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+

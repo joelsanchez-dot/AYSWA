@@ -7,4 +7,7 @@ urlpatterns = [
     path('', include('alumnos.urls')),
     path('becas/', include('becas.urls')),
     path('cupones/', include('SISTEMA.cupones.urls')),
+   path('', include('SISTEMA.foro_alumnos.urls')), # <--- También aquí agrega "SISTEMA."
 ]
+
+
